@@ -1,0 +1,405 @@
+/*--------------------------------------------------------------
+						GENERAL STYLES
+--------------------------------------------------------------*/
+
+body {
+	background: #506882;
+	height: 1500px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+h1, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*----------------------------------------------------------------
+					STYLES FOR NAVBAR
+----------------------------------------------------------------*/
+
+.navbar {
+	background: #FFF;
+	margin-top: 100px;
+	color: black;
+	height: 50px;
+}
+
+.mobileButton  {
+	background: #56CCC8;
+	width: 44px;
+}
+
+.navbar-toggle {
+	margin: 0;
+	height: 50px;
+}
+
+.mobileButton span {
+	background: #FFF;
+} 
+
+.navbar-nav li {
+	background: #FFF;
+}
+
+.activeA {
+	color: #56CCC8;
+}
+
+
+/*ICONS*/
+
+.navbar i, span {
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.navbarRightPart {
+	color: #B7BDC1;
+	height: 50px;
+	line-height: 50px;
+	width: 210px;
+}
+
+.navbarSearch {
+	width: 50px;
+	padding-left: 20px;
+	border-right: 1px solid #B7BDC1;
+}
+
+.navbarSocialIcons {
+	width: 110px;
+	border-right: 1px solid #B7BDC1;
+	padding-left: 20px;
+}
+
+.navbarSocialIcons i {
+	margin-right: 10px;
+}
+
+.navbarUserIcon {
+	width: 50px;
+	padding-left: 15px;
+}
+
+
+/*---------------------------------------------------
+					CONTENT
+---------------------------------------------------*/
+
+#content {
+	margin: 0;
+	padding-right: 0;
+	height: 680px;
+}
+
+#LeftVerticalTab {
+	background: #FFF;
+	padding: 0;
+}
+
+.nav-tabs span, i {
+	color: #B7BDC1;
+	margin-right: 20px;
+	font-size: 20px;
+}
+
+/*font-size doesn't work with span and i together*/
+
+.nav-tabs i {
+	font-size: 20px;
+}
+
+.nav-tabs li {
+	border-bottom: 1px solid #B7BDC1;
+	height: 60px;
+}
+
+.nav-tabs li a {
+	height: 100%;
+	width: 100%;
+	line-height: 60px;
+	padding: 0 0 0 30px;
+	margin: 0;
+}
+
+.nav-tabs li:hover a {
+	background: #56CCC8;
+	color: #FFF;
+}
+
+.nav-tabs li:hover span {
+	color: #FFF;
+}
+
+/*i tag doesn't work with .nav-tabs li:hover span, i*/
+
+.nav-tabs li:hover i {
+	color: #FFF;
+}
+
+/*active li element*/
+
+.nav-tabs li:nth-child(3) a {
+	background: #56CCC8;
+	color: #FFF;
+}
+
+.nav-tabs li:nth-child(3) a span {
+	color: #FFF;
+}
+
+.adress {
+	background: #C5CDD1;
+	height: 249px;
+	padding: 25px 0 0 30px;
+}
+
+.dataInAdress {
+	height: 83px;
+	color: #FFF;
+	padding-left: 40px;
+	top: 20px;
+	line-height: 10px;
+}
+
+.iconsInAdress span {
+	font-size: 20px;
+	color: #FFF;
+}
+
+
+
+/*SECOND PART OF THE LEFT ROW*/
+
+#secondRowInLeftArticle {
+	color: #FFF;
+}
+
+.LeftSideList {
+	background: #152840;
+	border-bottom: 1px solid #445E78;
+}
+
+.LeftSideList:nth-child(2) {
+	background: #263A54;
+}
+
+.LeftSideList ul {
+	padding-top: 20px;
+	margin: 0;
+}
+
+.LeftSideList ul li {
+	padding-bottom: 15px;
+}
+
+.LeftSideList h4 {
+	color: #56CCC8;
+}
+
+.LeftSideList a {
+	color: #FFF;
+}
+
+.LeftSideList i {
+	cursor: pointer;
+	color: #263A54;
+	background: #56CCC8;
+	padding: 5px;
+	border-radius: 50%;
+}
+
+
+/*SECOND ROW*/
+
+#RightArticle {
+	width: 550px;
+	margin-left: 20px;
+}
+
+#socialButtons {
+	background: #FFF;
+	padding: 20px;
+	margin: 
+}
+
+#socialButtons i {
+	cursor: pointer;
+	color: #C5CDD1;
+	float: left;
+	padding-top: 10px;
+}
+
+#socialButtons p {
+	padding-top: 13px;
+	font-size: 16px;
+}
+
+/*nth-child(2) for Twitter icon doesn't work, just nth-child(3)*/
+
+#socialButtons i:nth-child(3) {
+	color: #4FC6F8;
+}
+
+/*the same weird thing with paragrapgh*/
+
+#socialButtons p:nth-child(4) {
+	color: #4FC6F8;
+}
+
+
+.facebookBlock, .twitterBlock {
+	margin-left: 20px;
+	height: 125px;
+	padding: 30px;
+	color: #FFF;
+}
+
+/*Again, styles for i tag doesn't work within one selectore-line, so I made them in two particular lines*/
+
+.facebookBlock a {
+	color: #FFF;
+}
+
+.twitterBlock a {
+	color: #FFF;
+}
+
+.facebookBlock i {
+	color: #FFF;
+	padding-bottom: 20px;
+}
+
+.twitterBlock i {
+	color: #FFF;
+	padding-bottom: 20px;
+}
+
+.facebookBlock {
+	background: #4D6BA9;
+}
+
+.twitterBlock {
+	margin-top: 15px;
+	background: #4FC6F8;
+}
+
+.facebookFollowers, .twitterFollowers {
+	height: 30px;
+	line-height: 30px;
+	width: 230px;
+}
+
+.facebookFollowers span {
+	font-size: 24px;
+	margin-right: 20px;
+}
+
+.facebookFollowers a {
+	margin-left: 100px;
+}
+
+.twitterFollowers span {
+	margin-right: 20px;
+}
+
+.twitterFollowers a {
+	margin-left: 90px;
+}
+
+.SignIn {
+	text-align: center;
+	color: #475055;
+	height: 191px;
+	background: #FFF;
+	margin-bottom: 15px;
+	padding-top: 20px;
+} 
+
+.SignIn input {
+	margin-left: 40px;
+	width: 350px;
+	height: 35px;
+	line-height: 35px;
+	padding: 10px 15px;
+	outline: none;
+}
+
+.socialNetworks {
+	margin-top: 30px;
+}
+
+.socialNetworks img {
+	width: 24px;
+	cursor: pointer;
+	margin-top: -12px; 
+}
+
+.socialNetworks i {
+	color: #0274B3;
+	cursor: pointer;
+}
+
+.socialNetworks .fa-facebook-official {
+	color: #4D6BAA;
+} 
+
+.socialNetworks .fa-twitter-square {
+	color: #4FC6F8;
+}
+
+.socialNetworks .fa-google-plus-square {
+	color: #EA6060;
+}
+
+.carousel {
+	height: 450px;
+	background: #787878;
+	color: #FFF;
+	padding: 0;
+}
+
+.carouselDescription {
+	margin-left: 70px;
+	width: 400px;
+}
+
+.carouselDescription h1 {
+	padding-bottom: 30px;
+}
+
+.controls {
+	margin-top: 50px;
+}
+
+.controls button {
+	width: 200px;
+	margin-left: 20px;
+	height: 54px;
+	background: #787878;
+	border: 1px solid #FFF;
+}
+
+.controls i {
+	background: #FFF;
+	color: #585858;
+	padding: 20px 10px;
+	border-radius: 2px;
+	cursor: pointer;
+	margin: 0;
+}
